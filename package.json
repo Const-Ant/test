@@ -1,14 +1,20 @@
 {
-  "name": "electron-app",
+  "name": "nextjs-app",
   "version": "1.0.0",
-  "description": "A simple Electron application",
-  "main": "main.js",
+  "description": "A Next.js React application",
   "scripts": {
-    "start": "electron . --no-sandbox",
-    "build": "electron-builder"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   },
   "devDependencies": {
-    "electron": "^33.0.0",
-    "electron-builder": "^25.0.0"
+    "@types/node": "25.5.0",
+    "@types/react": "19.2.14",
+    "typescript": "6.0.2"
   }
 }
